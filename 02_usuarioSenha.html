@@ -6,10 +6,15 @@
     */
 
     //Entrada
-
+    const user = prompt(`Informe seu usuário:`);
+    const senha = prompt(`Informe sua senha:`);
 
     //Processamento
-
+    while(user === senha){
+            alert(`Inválido`);
+            const user = prompt(`Informe seu usuário:`);
+            const senha = prompt(`Informe sua senha:`);
+    }
 
     //Saída
 

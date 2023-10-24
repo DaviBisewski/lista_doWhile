@@ -6,10 +6,14 @@
     */
 
     //Entrada
-
+    const nota = Number(prompt(`Informe uma nota entre 0 e 10:`));
 
     //Processamento
-
+   
+    while(nota < 0 || nota > 10){
+        alert(`Inválido`);
+        const nota = Number(prompt(`Informe uma nota entre 0 e 10:`));
+    }
 
     //Saída
 

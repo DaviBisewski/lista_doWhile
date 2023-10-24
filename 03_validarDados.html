@@ -11,11 +11,20 @@
     */
 
     //Entrada
-
-
+    let nome = prompt(`Informe seu nome:`);
+    let idade = Number(prompt(`Informe sua idade:`));
+    let salario = Number(prompt(`Informe seu salário`));
+    let sexo = prompt(`Informe seu sexo | F-feminino | M-masculino`).toUpperCase();
+    let estado = prompt(`Informe seu estado civil: : 'S', 'C', 'V, 'D'`).toUpperCase();
     //Processamento
-
-
+    while(nome.lenght <= 3 || idade > 150 || idade < 0 || salario < 0 || sexo != "F" || sexo != "M" || estado != "S"|| estado != "C"|| estado != "V"|| estado != "D"){
+         nome = prompt(`Informe seu nome:`);
+         idade = Number(prompt(`Informe sua idade:`));
+         salario = Number(prompt(`Informe seu salário`));
+         sexo = prompt(`Informe seu sexo | F-feminino | M-masculino`).toUpperCase();
+         estado = prompt(`Informe seu estado civil: : 'S', 'C', 'V, 'D'`).toUpperCase();
+    }
+        
     //Saída
 
 </script>
