@@ -7,8 +7,19 @@
 
     //Entrada
 
+    let senha = prompt("insira sua senha")
+    let confirmsenha = prompt("insira novamente a sua senha para confirmar")
 
     //Processamento
+
+    while (senha != confirmsenha){
+        alert(`erro de sistema, senha incorreta`)
+        senha = prompt("insira sua senha")
+        confirmsenha = prompt("insira novamente a sua senha para confirmar")
+    }
+
+    document.write(`sucesso!!!!!!! senha${confirmsenha}`)
+
 
 
     //Saída

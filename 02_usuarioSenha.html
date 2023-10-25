@@ -6,15 +6,17 @@
     */
 
     //Entrada
-    const user = prompt(`Informe seu usuário:`);
-    const senha = prompt(`Informe sua senha:`);
+    let user = prompt(`Informe seu usuário:`)
+    let senha = prompt(`Informe sua senha:`)
 
     //Processamento
-    while(user === senha){
-            alert(`Inválido`);
-            const user = prompt(`Informe seu usuário:`);
-            const senha = prompt(`Informe sua senha:`);
+    while(user == senha){
+            alert(`Inválido`)
+             user = prompt(`Informe seu usuário:`)
+             senha = prompt(`Informe sua senha:`)
     }
+
+    document.write-(`${user} <br> ${senha}`)
 
     //Saída
 

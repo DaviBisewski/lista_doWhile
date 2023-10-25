@@ -6,9 +6,21 @@
     */
 
     //Entrada
-    
+
+    let crescimentoB = 0.015;
+    let crescimentoA = 0.03;
+    let popA = 80000;
+    let popB = 200000;
+    let ano = 0;
 
     //Processamento
+
+    while (popA < popB){
+        popA += popA * crescimentoA
+        popB += popB * crescimentoB
+        ano++
+    }
+    alert(`${ano} enfia no cu`)
 
 
     //Saída
