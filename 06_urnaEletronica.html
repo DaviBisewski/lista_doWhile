@@ -21,14 +21,43 @@
 
     //Entrada
 
-    let candidatos = Number(prompt("1-joaozinhu  2-Mariazinha 3-nulo  4-branco"))
-    let 
-    //Processamento
+    let joao = 0;
+    let maria = 0;
+    let nulo = 0;
+    let branco = 0;
+    let voto = Number(prompt(`Informe o primeiro voto: 1. Candidato Joãozinho \n2. Candidato Mariazinha \n3. Nulo \n4. Branco \nQuando terminar os votos, aperte 0.`))
 
-    while(candidatos == "1")
-    
+
+    //Processamento
+    while (voto != 0) {
+        switch (voto) {
+            case 1: joao++
+                break;
+            case 2: maria++
+                break;
+            case 3: nulo++
+                break;
+            case 4: branco++
+                break;
+
+            default:
+                break;
+        }
+        voto = Number(prompt(`Informe o primeiro voto: 1. Candidato Joãozinho \n2. Candidato Mariazinha \n3. Nulo \n4. Branco \nQuando terminar os votos, aperte 0.`))
+    }
+    let somaVotos = joao+maria+nulo+branco
+
+
 
     //Saída
+    alert(`Votos de João: ${joao} \nVotos de Maria: ${maria} \n${nulo} Votos Nulos, porcentagem: ${((nulo/somaVotos)*100).toFixed(2)}% \n${branco} Votos em Branco, porcentagem: ${((branco/somaVotos)*100).toFixed(2)}%`)
+    if(joao > maria){
+        alert(`O vencedor foi João!`)
+    }
+    else{
+        alert(`O vencedor foi Maria!`)
+    }
+
 
 </script>
 
